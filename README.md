@@ -12,8 +12,7 @@ from torchvision import datasets,transforms
 2.以下为图像数据预处理操作：
 train_path = "./pytorch_datasets/train"
 test_path = "./pytorch_datasets/test"
-
-#定义数据集预处理的方法
+定义数据集预处理的方法
 data_transform = transforms.Compose([
 #        transforms.Resize((224,224)),
         transforms.RandomResizedCrop(150),
